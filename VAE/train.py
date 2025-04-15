@@ -30,8 +30,9 @@ latent_dim = 4
 # }
 
 # 加载数据集
-dataset = load_dataset("svjack/pokemon-blip-captions-en-zh", split="train")
-# dataset = load_dataset("imagefolder", split="train", data_dir="train_images/")  # 也可以这样加载本地文件夹的图片数据集
+#dataset = load_dataset("svjack/pokemon-blip-captions-en-zh", split="train")
+dataset = load_dataset("svjack/pokemon-blip-captions-en-zh",split="train")
+#dataset = load_dataset("imagefolder", split="train", data_dir="train_images/")  # 也可以这样加载本地文件夹的图片数据集
 
 preprocess = transforms.Compose(
     [
